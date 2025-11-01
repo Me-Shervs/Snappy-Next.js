@@ -18,7 +18,7 @@ export default function Header() {
               className='flex items-center header-button font-extrabold text-2x1 m-1'
             >
               <Image
-                src='/icons/logi.svg'
+                src='/icons/logo.svg'
                 width={40}
                 height={40}
                 alt={`${APP_NAME} logo`}
@@ -35,7 +35,7 @@ export default function Header() {
           <Search />
         </div>
       </div>
-      <div className='flex items-center px-3 mb-[1px] bg-gray-800'>
+      <div className='flex items-center px-3 mb-[1px] bg-orange-700'>
         <Button
           variant='ghost'
           className='header-button flex items-center gap-1 text-base [&_svg]:size-6'
@@ -48,7 +48,7 @@ export default function Header() {
             <Link
               href={menu.href}
               key={menu.href}
-              className='header-button !p-2'
+              className='header-button p-2!'
             >
               {menu.name}
             </Link>
