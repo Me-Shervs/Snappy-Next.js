@@ -16,7 +16,9 @@ export default async function Search() {
     <form action='/search' method='GET' className='flex items-stretch h-10'>
       <Select name='category'>
         <SelectTrigger className='w-auto h-9 dark:border-gray-200 bg-primary text-white border-r  rounded-r-none rounded-l-md rtl:rounded-r-md rtl:rounded-l-none'>
-          <SelectValue placeholder='All' />
+          <span className="text-white">
+            <SelectValue placeholder="All" />
+          </span>
         </SelectTrigger>
         <SelectContent position='popper'>
           <SelectItem value='all'>All</SelectItem>
