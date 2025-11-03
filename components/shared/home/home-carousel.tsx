@@ -21,7 +21,7 @@ export function HomeCarousel({
         image: string
         url: string
         title: string
-        buttonCaptions: string
+        buttonCaption: string
     }[]
 }) {
     const plugin = React.useRef(
@@ -58,7 +58,7 @@ export function HomeCarousel({
                                             {item.title}
                                         </h2>
                                         <Button className='hidden md:block'>
-                                            {item.buttonCaptions}
+                                            {item.buttonCaption}
                                         </Button>
                                     </div>
                                 </div>
